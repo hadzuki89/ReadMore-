@@ -1,6 +1,6 @@
 
 .post{
-  display: block;
+  display: flex;
   width: 150px;
   padding: 10px;
   border: 1px solid white;
@@ -12,14 +12,11 @@
   margin-bottom: 20px;
 }
 
-.book{
-  height:200px;
-  background-color:lightgray;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  border: 1px solid #fff;
-  padding: 20px;
+.book {
+  background-color: #FFF;
+  width: 70vw;
+  min-width: 450px;
+  padding: 10vh 15vw;
 }
 
 .book-box {

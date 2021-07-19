@@ -9,8 +9,8 @@
 
 <div class="contents row">
   <% @books.each do |book| %>
-    <div class="article">
-      
+    <div class="book">
+      <%= image_tag book.image.variant(resize: '500x500'), class: 'book-image' if book.image.attached? %>
       <div class="book-title">
         <%= book.title %>
       </div>
