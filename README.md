@@ -12,7 +12,7 @@
 
 | Column             | Type    | Options     |
 | ------------------ | ------- | ----------- |
-| name               | string  | null: false |
+| title              | string  | null: false |
 | story              | text    | null: false |
 | category_id        | integer | null: false |
 | quote              | text | null: false |

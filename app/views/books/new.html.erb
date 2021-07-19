@@ -1,0 +1,13 @@
+<%= form_with model: @book, url:books_path, local: true do |f| %>
+  <div class="book-box">
+    読んだ本を投稿しよう！
+    <%= f.text_field :title, class:"title", placeholder:"この本のタイトルは？" %>
+    この本のジャンルは？
+    <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"category-select"}) %>
+    <%= f.text_area :story, class:"story", placeholder:"この本のあらすじは？" %>
+    <%= f.text_area :quote, class:"quote", placeholder:"好きな箇所を引用してください" %>
+    <%= f.text_area :thought, class:"thought", placeholder:"この本の感想は？" %>
+    <%= f.submit "投稿する" ,class:"btn" %>
+    <%= link_to 'もどる', root_path %>
+  </div>
+<% end %>

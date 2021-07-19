@@ -1,0 +1,22 @@
+<header class="header">
+      <div class="header__bar row">
+        <h1 class="grid-6"><a href="/">ReadMore!</a></h1>
+        <div class="user_nav grid-6">
+          <%= link_to '投稿する', new_book_path, class: "post" %>
+        </div>
+      </div>
+</header>
+
+<div class="contents row">
+  <% @books.each do |book| %>
+    <div class="article">
+      
+      <div class="book-title">
+        <%= book.title %>
+      </div>
+      <div class="book-category">
+        <%= book.category.name %>
+      </div>
+    </div>
+  <% end %>
+</div>
