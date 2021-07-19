@@ -1,0 +1,19 @@
+<div class = 'book-show'>
+  <%= image_tag @book.image.variant(resize: '500x500'), class: 'book-image' if @book.image.attached? %>
+  <div class="book-title">
+    タイトル：<%= @book.title %>
+  </div>
+  <div class="book-category">
+    ジャンル：<%= @book.category.name %>
+  </div>
+  <div class="book-story">
+    あらすじ：<%= @book.story %>
+  </div>
+  <div class="book-quote">
+    引用：<%= @book.quote %>
+  </div>
+  <div class="book-thought">
+    感想：<%= @book.thought %>
+  </div>
+</div>
+<%= link_to 'もどる', root_path %>

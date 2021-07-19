@@ -12,10 +12,10 @@
     <div class="book">
       <%= image_tag book.image.variant(resize: '500x500'), class: 'book-image' if book.image.attached? %>
       <div class="book-title">
-        <%= book.title %>
+        タイトル：<%= link_to book.title, book_path(book.id) %>
       </div>
       <div class="book-category">
-        <%= book.category.name %>
+        ジャンル：<%= book.category.name %>
       </div>
     </div>
   <% end %>

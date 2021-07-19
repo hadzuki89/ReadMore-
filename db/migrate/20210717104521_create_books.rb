@@ -7,6 +7,8 @@ class CreateBooks < ActiveRecord::Migration[6.0]
       t.text :quote, null: false
       t.text :thought, null: false
 
+      
+
       t.timestamps
     end
   end

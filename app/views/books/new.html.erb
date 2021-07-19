@@ -1,11 +1,8 @@
+
 <%= form_with model: @book, url:books_path, local: true do |f| %>
   <div class="book-box">
     読んだ本を投稿しよう！
     <div class="img-upload">
-      <div class="weight-bold-text">
-        商品画像
-        <span class="indispensable">必須</span>
-      </div>
       <div class="click-upload">
         <p>
           クリックしてファイルをアップロード
@@ -19,6 +16,9 @@
     <%= f.text_area :story, class:"story", placeholder:"この本のあらすじは？" %>
     <%= f.text_area :quote, class:"quote", placeholder:"好きな箇所を引用してください" %>
     <%= f.text_area :thought, class:"thought", placeholder:"この本の感想は？" %>
+    
+    
+
     <%= f.submit "投稿する" ,class:"btn" %>
     <%= link_to 'もどる', root_path %>
   </div>
