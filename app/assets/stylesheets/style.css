@@ -1,7 +1,7 @@
 
 .post{
   display: flex;
-  width: 150px;
+  width: 200px;
   padding: 10px;
   border: 1px solid white;
   background-color: orange;
@@ -12,15 +12,59 @@
   margin-bottom: 20px;
 }
 
+.each {
+  font-size: xx-large;
+  text-align: center;
+}
+
 .book {
   background-color: #FFF;
   width: 70vw;
   min-width: 450px;
   padding: 10vh 15vw;
+  text-align: center;
 }
 
 .book-box {
+  display: flex;
   flex-direction: column;
+}
+
+.todo {
+  font-size: 50px;
+  color: green;
+  text-align: center;
+}
+
+.img-upload {
+  margin: 20px 100px 20px 100px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.title {
+  margin: 20px 100px 20px 100px;
+  text-align: center;
+}
+
+.story {
+  margin: 20px 100px 20px 100px;
+  text-align: center;
+}
+
+.quote {
+  margin: 20px 100px 20px 100px;
+  text-align: center;
+}
+
+.thought {
+  margin: 20px 100px 20px 100px;
+  text-align: center;
+}
+
+.category-select {
+  margin: 20px 100px 20px 100px;
+  text-align: center;
 }
 
 .evaluation{
@@ -51,4 +95,8 @@
 .evaluation label:hover ~ label,
 .evaluation input[type='radio']:checked ~ label{
   color: #ffcc00;
+}
+
+.btn {
+  height: 50px;
 }
