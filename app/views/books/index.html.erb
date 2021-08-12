@@ -10,10 +10,10 @@
 <div class="contents row">
   <% @books.each do |book| %>
     <div class="book">
-      <%= image_tag book.image.variant(resize: '500x500'), class: 'book-image' if book.image.attached? %>
       <div class="book-title">
-        タイトル：<%= link_to book.title, book_path(book.id) %>
+        『<%= link_to book.title, book_path(book.id) %>』
       </div>
+      <%= image_tag book.image.variant(resize: '500x500'), class: 'book-image' if book.image.attached? %>
       <div class="book-category">
         ジャンル：<%= book.category.name %>
       </div>

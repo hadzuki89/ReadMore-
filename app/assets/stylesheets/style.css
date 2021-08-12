@@ -38,40 +38,47 @@
 }
 
 .img-upload {
-  margin: 20px 100px 20px 100px;
+  margin: 20px 0px 20px 0px;
   text-align: center;
   border: 1px solid black;
+  background-color: lightskyblue;
 }
 
 .title {
-  margin: 20px 100px 20px 100px;
+  margin: 20px 0px 20px 0px;
   text-align: center;
+  background-color: lightyellow;
 }
 
 .story {
-  margin: 20px 100px 20px 100px;
+  margin: 20px 0px 20px 0px;
   text-align: center;
+  background-color: lightyellow;
 }
 
 .quote {
-  margin: 20px 100px 20px 100px;
+  margin: 20px 0px 20px 0px;
   text-align: center;
+  background-color: lightyellow;
 }
 
 .thought {
-  margin: 20px 100px 20px 100px;
+  margin: 20px 0px 20px 0px;
   text-align: center;
+  background-color: lightyellow;
 }
 
 .category-select {
-  margin: 20px 100px 20px 100px;
+  margin: 20px 0px 20px 0px;
   text-align: center;
+  background-color: lightyellow;
 }
 
 .evaluation{
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
+  margin: 20px 0px 20px 0px;
 }
 .evaluation input[type='radio']{
   display: none;

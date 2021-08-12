@@ -1,9 +1,9 @@
 <%= @book.title %>の詳細ページ
 <div class = 'book-show'>
-  <%= image_tag @book.image.variant(resize: '500x500'), class: 'book-image' if @book.image.attached? %>
   <div class="book-title">
-    タイトル：<%= @book.title %>
+    『<%= @book.title %>』
   </div>
+  <%= image_tag @book.image.variant(resize: '500x500'), class: 'book-image' if @book.image.attached? %>
   <div class="book-category">
     ジャンル：<%= @book.category.name %>
   </div>
